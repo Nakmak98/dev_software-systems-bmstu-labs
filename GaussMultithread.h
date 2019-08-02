@@ -13,7 +13,7 @@ typedef struct {
     int step;      // шаг для определения следующей строки
 } Threads;
 
-int gauss_solve(const double *, double* , const double* , int, int);
+int gauss_solve(const double* A, double* X, const double* B, int N, int M);
 
 void *thread_exclusion(void *arg_p);
 
