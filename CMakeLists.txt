@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(gauss C)
 set(CMAKE_C_STANDARD 99)
-add_executable(gauss GaussMultithread.h)
+add_executable(gauss GaussMultithread.c)
 target_link_libraries(gauss m)
 target_link_libraries(gauss pthread)
